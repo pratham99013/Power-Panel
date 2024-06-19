@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+{% load static %}
+{% block title%}
+hello
+{% endblock %}
+
+{%block content%}
+<link rel="stylesheet" href="{% static 'styles.css' %}">
+<div class="okay">
+<section class="wrapper">
+  <div class="top">HERIOC HORIZON</div>
+  <div class="bottom" aria-hidden="true">HERIOC HORIZON</div>
+ 
+</section>
+<div class="text"><p>Explore a platform where you can create blogs and engage in lively discussions about superheroes and movies.<p></div>
+</div>
+{% if user.is_authenticated %}
+    <a class="btn btn-primary" href="{% url 'tweet_create' %}">Create a tweet</a>
+{% else %}
+    <a class="btn btn-primary" href="{% url 'login' %}">Create a tweet</a>
+{% endif %}
+
+<div class="conatiner row gap-3">
+
+  {% for tweet in tweets %}
+
+  <div class="card" style="width: 18rem;">
+      {% if tweet.photo %}
+          <img src="{{ tweet.photo.url }}" class="card-img-top" alt="...">
+      {% endif %}
+      <div class="card-body">
+          <h5 class="card-title">{{ tweet.title }}</h5>
+          <p class="card-text">{{ tweet.text }}</p>
+          {% if user.is_authenticated and user == tweet.user %}
+              <a href="{% url 'tweet_edit' tweet.id %}" class="btn btn-primary">Edit</a>
+              <a href="{% url 'tweet_delete' tweet.id %}" class="btn btn-danger">Delete</a>
+          {% endif %}
+          <div class="card-footer d-flex justify-content-between">
+              <p class="card-text">{{ tweet.user.username }}</p>
+          </div>
+      </div>
+  </div>
+  
+  {% endfor %}
+</div>
+{% endblock %}
+

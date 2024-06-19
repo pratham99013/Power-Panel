@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+
+{% block content %}
+<div class="container mt-5">
+    <h2>Reply to: {{ question.title }}</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">Reply</button>
+    </form>
+</div>
+{% endblock %}
