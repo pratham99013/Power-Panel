@@ -7,7 +7,7 @@ from .models import Question, Reply
 class Tweetform(forms.ModelForm):
     class Meta:
         model = Tweet
-        fields = ['text', 'photo']
+        fields = ['title' , 'text', 'photo']
 
 
 class UserRegistrationForm(UserCreationForm):
