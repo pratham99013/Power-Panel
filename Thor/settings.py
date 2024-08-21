@@ -89,7 +89,7 @@ DATABASES = {
     }
 }
 database_url = os.environ.get("DATABASE_URL")
-DATABASES['default'] = dj_database_url.parse("postgresql://pratham_y2ky_user:zsXMWXIgg1GFGQ6PEnItZ0XZ3gEQgDPH@dpg-cqdahp88fa8c73b24d80-a.oregon-postgres.render.com/pratham_y2ky")
+DATABASES['default'] = dj_database_url.parse("postgresql://chatam_user:Ipk7fdreH3U4wIz0F2IyYJeRlUg6IcwS@dpg-cr323drqf0us73b280sg-a.oregon-postgres.render.com/chatam")
 
 #postgres://hello_0vlm_user:xLiX10DtOuXth2P9s4Mu2TC7LudynBgD@dpg-cphkmoocmk4c73ejsnc0-a.oregon-postgres.render.com/hello_0vlm
 
