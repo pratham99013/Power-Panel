@@ -1,0 +1,109 @@
+.container{
+    background-color: rgba(255, 255, 255, 0); /* Fully transparent */
+    padding: 20px;
+
+}
+body {
+    background-image: url('dark-superhero-wallpapers-165025-2172070-2994544.png');
+    background-size: cover;         /* Ensures the image covers the entire screen */
+    background-repeat: no-repeat;   /* Prevents the image from repeating */
+    background-attachment: fixed;   /* Makes sure the background image stays fixed when scrolling */
+    background-position: center;    /* Centers the image */
+    height: 100vh;                  /* Sets the height to 100% of the viewport */
+    margin: 0;
+}
+.containu {
+    width: 50%;
+
+    display: flex;
+    margin: auto;
+align-self: center;
+text-align: center;
+margin-left: 450px;
+background-color: rgba(0, 0, 0, 0.5);
+
+    
+  }
+  
+  h3 {
+    font-size: 50px;
+    text-transform: uppercase;
+    font-family: 'Times new Roman', serif;
+    letter-spacing: -1px;
+    transition: 700ms ease;
+    font-variation-settings: "wght" 311;
+
+    color: rgb(228, 224, 182);
+    outline: none;
+    text-align: center;
+  }
+  
+  h1:hover {
+    font-variation-settings: "wght" 582; 
+    letter-spacing: 1px;
+  }
+  
+  .navbar-nav .nav-item form {
+    margin-right: 10px; /* Adjust the margin-right as needed */
+}
+.btn-primary {
+    margin-bottom: 10px; /* Adjust the margin bottom as needed */
+}
+.card {
+    background-color: rgba(81, 75, 75, 0.5);
+    border: none; /* Optionally remove border */
+
+}
+/* styles.css */
+.heading-4 {
+  color: #9f8585; /* Grey color */
+  text-align: center; /* Center align text */
+  font-size: 1.8rem; /* Adjust font size as needed */
+  margin-bottom: 10px; /* Optional: Add margin bottom */
+  border-bottom: 2px solid #cccccc; /* Border style */
+  margin: auto;
+}
+
+
+:root {
+  --background-color: rgba(0, 0, 0, 0.5);
+  --text-color: hsl(0, 0%, 100%);
+}
+body {
+  margin: 0;
+}
+.wrapper {
+  display: grid;
+  place-content: center;
+  background-color: var(--background-color);
+  min-height: 10vh;
+  font-family: "Oswald", sans-serif;
+  font-size: 3.0rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-color);
+}
+
+.wrapper > div {
+  grid-area: 1/1/-1/-1;
+}
+.top {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 48%, 0% 58%);
+}
+.bottom {
+  clip-path: polygon(0% 60%, 100% 50%, 100% 100%, 0% 100%);
+  color: transparent;
+  background: -webkit-linear-gradient(177deg, black 53%, var(--text-color) 65%);
+  background: linear-gradient(177deg, black 53%, var(--text-color) 65%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  transform: translateX(-0.02em);
+}
+.text{
+font-size: 14px;
+  margin: auto;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: bisque;
+
+}
